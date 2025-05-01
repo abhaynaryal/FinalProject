@@ -1,0 +1,75 @@
+ .help-page {
+    padding: 32px;
+    margin-top:40px ;
+    margin-left: 250px; /* Adjust based on sidebar width */
+    margin-top: 70px;
+  }
+
+  .help-heading {
+    font-size: 40px;
+    margin-bottom: 16px;
+    align-items: center;
+    color: #535353;
+  }
+  
+  .help-description {
+    font-size: 20px;
+    margin-bottom: 32px;
+    color: #838383;
+  }
+  
+  .card-container {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  
+  .help-card {
+    background-color: #f9f9f9;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease;
+  }
+  
+  .help-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: #585858;
+  }
+  
+  .card-text {
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: #838383;
+  }
+  
+  .card-link {
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-support {
+    justify-content: center;
+    margin-top: 48px;
+    font-size: 18px;
+    color: #585858;
+  }
+  
+  .contact-link {
+    color: #007bff;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+   
