@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: space-between;
     font-size: 22px;
-    padding: 10px 20px;
+    padding: 14px 20px;
     background-color: white;
     color: #585858;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -42,3 +42,46 @@
     border-radius: 50%;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+.custom-btn {
+    padding: 5px 14px;
+    margin: 0px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* box-shadow: 0 2px 8px rgba(0,0,0,0.1); */
+  }
+  
+  /* Home button styling */
+  .home-btn {
+    background-color: #ffffff;
+    color: #585858;
+    border: 1px solid #dadce0;
+  }
+  
+  .home-btn:hover {
+    background-color: #f1f3f4;
+  }
+  
+  /* Sign In button styling */
+  .signin-btn {
+    background-color: #007bff; /* Google Blue */
+    color: white;
+  }
+  
+  .signin-btn:hover {
+    background-color: #357ae8;
+  }
+  

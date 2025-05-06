@@ -1,0 +1,111 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* Wrapper for the entire form */
+.login-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+  width: 100%;
+  
+}
+
+/* Form container */
+.login-form-container {
+  /* background: #f9f9f9; */
+  padding: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Center text inside the form */
+  border-radius: 15px;
+}
+
+/* Title and subtitle */
+.log {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #535353;
+}
+
+.log2 {
+  font-size: 14px;
+  color: #858585;
+  margin-bottom: 15px;
+}
+
+/* Input Fields */
+.login-input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  box-shadow:  0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-form{
+  width: 300px;
+
+}
+
+/* Input focus effect */
+.login-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Forgot Password Link */
+.forgot-password {
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: background-color 0.3s;
+  margin-bottom: 15px;
+}
+
+.login-btn:hover {
+  background-color: #007bff;
+}
+
+/* Switch between SignUp and Login */
+.toggle-link {
+  color: #5e9fdd;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.toggle-link:hover {
+  text-decoration: underline;
+}

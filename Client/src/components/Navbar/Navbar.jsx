@@ -1,21 +1,37 @@
-import React from 'react';
-import { assets } from '../../assets/assets';
+import React, { useContext } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { Context } from '../../context/Context';
 import './Navbar.css';
-import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+  const { isLoggedin, setIsLoggedin } = useContext(Context);
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    setIsLoggedin(false);
+    navigate('/login');
+    
+  };
+
   return (
     <nav className="nav">
       <Link to="/" className='gem'>
         <p>Gemini</p>
       </Link>
 
-      {/* Flexbox to hold the links and user icon together */}
-      {/* <div className="nav-right">
-        <Link to="/login" className="nav-link">Login</Link>
-        <Link to="/register" className="nav-link">Sign Up</Link>
-        <img src={assets.user_icon} alt="user icon" className="user-icon" />
-      </div> */}
+      {/* Conditionally render the Login/Logout button */}
+      <div className="nav-right">
+        {isLoggedin ? (
+          
+            <button onClick={handleLogout}>Logout</button>
+          
+        ) : (
+          <>
+            <button className="custom-btn home-btn" onClick={() => navigate('/Home')}>Home</button>
+            <button className="custom-btn signin-btn" onClick={() => navigate('/login')}>Sign In</button>
+          </>
+        )}
+      </div>
     </nav>
   );
 };

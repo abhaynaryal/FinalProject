@@ -97,6 +97,8 @@ const Sidebar = () => {
           {extended ? <p>New Chat</p> : null}
         </div>
 
+        
+
         {extended ? (
           <div className="recent">
             <p className="recent-title">Recent</p>
@@ -118,6 +120,7 @@ const Sidebar = () => {
 
       <div className="bottom">
         <Link to="/help" className="bottom-item recent-entry">
+        
           <img src={assets.question_icon} alt="" />
           {extended ? <p>Help</p> : null}
         </Link>

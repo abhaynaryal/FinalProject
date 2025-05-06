@@ -4,6 +4,10 @@ import run from "../config/gemini";
 export const Context = createContext();
 
 const ContextProvider = (props) => {
+  const backendUrl = import.meta.env.VITE_BACKEND_URL;
+  const [isLoggedIn, setIsLoggedin] = useState(false); // Corrected the casing here
+  const [userData, setuserData] = useState(false);
+
   const [input, setInput] = useState("");
   const [recentPrompt, setRecentPrompt] = useState("");
   const [prevPrompts, setPrevPrompts] = useState([]);
@@ -73,6 +77,7 @@ const ContextProvider = (props) => {
       setLoading(false); // Ensure loading is disabled on error
     }
   };
+
   const contextValue = {
     prevPrompts,
     setPrevPrompts,
@@ -85,6 +90,11 @@ const ContextProvider = (props) => {
     input,
     setInput,
     newChat,
+    backendUrl,
+    isLoggedIn, // Corrected the casing here
+    setIsLoggedin,
+    userData,
+    setuserData
   };
 
   return (
