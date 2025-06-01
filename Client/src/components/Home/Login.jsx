@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom'
 const Login = () => {
   const navigate = useNavigate()
 
-  const { backendUrl, setIsLoggedin } = useContext(Context)
+  const { backendUrl, setIsLoggedIn } = useContext(Context)
 
   const [state, setState] = useState('Sign Up')
   
@@ -29,8 +29,8 @@ const Login = () => {
         const { data } = await axios.post(backendUrl + '/api/auth/register', {name, email, password})
 
         if (data.success) {
-          setIsLoggedin(true)
-          navigate('/Home')
+          setIsLoggedIn(true)
+          navigate('/home')
         } else {
           toast.error(data.message)
         }
@@ -39,8 +39,8 @@ const Login = () => {
         const { data } = await axios.post(backendUrl + '/api/auth/login', {email, password })
 
         if (data.success) {
-          setIsLoggedin(true)
-          navigate('/Home')
+          setIsLoggedIn(true)
+          navigate('/home')
         } else {
           toast.error(data.message)
         }
@@ -58,7 +58,7 @@ const Login = () => {
         <p>Gemini</p>
       </Link>
 
-      <button className="custom-btn home-btn" onClick={() => navigate('/Home')}>Home</button>
+      <button className="custom-btn home-btn" onClick={() => navigate('/home')}>Home</button>
 
     </nav>
 

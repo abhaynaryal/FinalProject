@@ -9,8 +9,8 @@
 .main .greet {
   margin-top: 200px;
   font-size: 45px;
+  color: black;
   /* color: #c4c7c5; */
-  color: #c4c7c5;
   font-weight: 500;
   padding: 20px;
   /* align-items: center; */
@@ -37,7 +37,7 @@
   padding: 15px 15px;
   /* margin: 0px; */
   border: none;
-  border-radius: 20px;
+  border-radius: 6px;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;

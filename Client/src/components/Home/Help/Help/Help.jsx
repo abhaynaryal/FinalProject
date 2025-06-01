@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Help.css";
-import Navbar from "../../Navbar/Navbar";
-import Sidebar from "../../sidebar/Sidebar";
+import Navbar from "../../../Navbar/Navbar";
+import Sidebar from "../../../sidebar/Sidebar";
 
 
 
@@ -25,7 +25,7 @@ const Help = () => {
           <p className="card-text">
             Learn how to navigate, create new chats, and use all features effectively.
           </p>
-          <Link to="/help/UsingApp" className="card-link">
+          <Link to="/home/help/usingapp" className="card-link">
             Learn More →
           </Link>
         </div>
@@ -35,7 +35,7 @@ const Help = () => {
           <p className="card-text">
             Find answers to the most commonly asked questions.
           </p>
-          <Link to="/help/Faqs" className="card-link">
+          <Link to="/home/help/faqs" className="card-link">
             Learn More →
           </Link>
         </div>
@@ -44,11 +44,18 @@ const Help = () => {
       <div className="contact-support">
         <p>
           Still need help?{" "}
-          <Link to="/help/Support" className="contact-link">
+          <Link to="/home/help/support" className="contact-link">
             Contact Support
           </Link>
         </p>
+
+        <div className="back-link">
+              <Link to="/home" className="back-button">← Back to Help</Link>
+            </div>
       </div>
+
+      
+
     </div>
     </>
     

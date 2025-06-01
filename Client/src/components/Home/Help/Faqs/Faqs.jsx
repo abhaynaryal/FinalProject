@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Faqs.css";
+import "./faqs.css";
 import Sidebar from "../../../sidebar/Sidebar";
 import Navbar from "../../../Navbar/Navbar";
 
@@ -40,7 +40,7 @@ const Faqs = () => {
       </div>
 
       <div className="back-link">
-        <Link to="/help" className="back-button">← Back to Help</Link>
+        <Link to="/home/help" className="back-button">← Back to Help</Link>
       </div>
     </div>
     </>

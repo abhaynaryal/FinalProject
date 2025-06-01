@@ -108,7 +108,7 @@ const Sidebar = () => {
                   key={index}
                   onClick={() => loadPrompt(item)}
                   className="recent-entry"
-                >
+                > 
                   <img src={assets.message_icon} alt="" />
                   <p>{item.slice(0, 18)}...</p>
                 </div>
@@ -119,7 +119,7 @@ const Sidebar = () => {
       </div>
 
       <div className="bottom">
-        <Link to="/help" className="bottom-item recent-entry">
+        <Link to="/home/help" className="bottom-item recent-entry">
         
           <img src={assets.question_icon} alt="" />
           {extended ? <p>Help</p> : null}

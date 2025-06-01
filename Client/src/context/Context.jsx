@@ -5,7 +5,7 @@ export const Context = createContext();
 
 const ContextProvider = (props) => {
   const backendUrl = import.meta.env.VITE_BACKEND_URL;
-  const [isLoggedIn, setIsLoggedin] = useState(false); // Corrected the casing here
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // Corrected the casing here
   const [userData, setuserData] = useState(false);
 
   const [input, setInput] = useState("");
@@ -25,6 +25,8 @@ const ContextProvider = (props) => {
     setLoading(false);
     setShowResult(false);
   };
+
+  
 
   const onSent = async (prompt) => {
     setResultData("");
@@ -92,9 +94,10 @@ const ContextProvider = (props) => {
     newChat,
     backendUrl,
     isLoggedIn, // Corrected the casing here
-    setIsLoggedin,
+    setIsLoggedIn,
     userData,
-    setuserData
+    setuserData,
+    
   };
 
   return (

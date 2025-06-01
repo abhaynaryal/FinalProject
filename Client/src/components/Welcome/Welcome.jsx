@@ -17,7 +17,7 @@ const Main = () => {
           <p>Meet<span>Gemini</span></p>
         </p>
         <p>your personal AI assistant</p>
-        <Link to="/Home">
+        <Link to="/home">
             <button className="get-started-btn">Get Started</button>
           </Link>
       </div>

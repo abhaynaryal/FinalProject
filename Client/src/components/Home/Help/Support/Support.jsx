@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Support.css";
+import "./support.css";
 import Navbar from "../../../Navbar/Navbar";
 import Sidebar from "../../../sidebar/Sidebar";
 // import Sidebar from "../sidebar/Sidebar";
@@ -32,7 +32,7 @@ const Support = () => {
       </div>
 
       <div className="back-link">
-        <Link to="/help" className="back-button">← Back to Help</Link>
+        <Link to="/home/help" className="back-button">← Back to Help</Link>
       </div>
     </div>
     </>

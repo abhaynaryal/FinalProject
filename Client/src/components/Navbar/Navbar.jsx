@@ -4,11 +4,11 @@ import { Context } from '../../context/Context';
 import './Navbar.css';
 
 const Navbar = () => {
-  const { isLoggedin, setIsLoggedin } = useContext(Context);
+  const { isLoggedIn, setIsLoggedIn } = useContext(Context);
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    setIsLoggedin(false);
+    setIsLoggedIn(false);
     navigate('/login');
     
   };
@@ -21,13 +21,14 @@ const Navbar = () => {
 
       {/* Conditionally render the Login/Logout button */}
       <div className="nav-right">
-        {isLoggedin ? (
+         
+        {isLoggedIn ? (
           
-            <button onClick={handleLogout}>Logout</button>
+            <button  className="custom-btn signin-btn "onClick={handleLogout}>Logout</button>
           
         ) : (
           <>
-            <button className="custom-btn home-btn" onClick={() => navigate('/Home')}>Home</button>
+            <button className="custom-btn home-btn" onClick={() => navigate('/home')}>Home</button>
             <button className="custom-btn signin-btn" onClick={() => navigate('/login')}>Sign In</button>
           </>
         )}
